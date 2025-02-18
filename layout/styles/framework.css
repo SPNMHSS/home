@@ -49,7 +49,7 @@ blockquote::before{display:block; position:absolute; top:0; left:0; font-family:
 
 a{outline:none; text-decoration:none;}
 
-.fl_left, .imgl{float:left;}
+.fl_left, .imgl{float:none;}
 .fl_right, .imgr{float:right;}
 
 img{width:auto; max-width:100%; height:auto; margin:0; padding:0; border:none; line-height:normal; vertical-align:middle;}
