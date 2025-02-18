@@ -44,34 +44,16 @@
 </head>
 <body id="top">
 <div class="wrapper row1">
-<header id="header" class="hoc clear" style="width: 100%; display: flex; align-items: center; padding: 10px 0; position: relative; background-color: #333;">
+<header id="header" class="hoc clear" style="width: 100%; display: flex; align-items: center; padding: 10px 0; position: relative;">
   <div class="left-text" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); text-align: left; width: 20%;">
-    <p class="glowing-text" style="color: white; font-weight: bold; text-shadow: 0 0 5px #66aaff, 0 0 10px #66aaff; animation: glow 2s ease-in-out infinite alternate; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-      "Education is the passport to the future."
-    </p>
+    <p style="color: white; font-weight: bold; text-shadow: 1px 1px 2px black;">Empowering minds since 1995</p>
   </div>
-  
-  <div id="logo" style="width: 60%; margin-left: 20%; text-align: center;"> 
-    <img src="images/demo/SCHOOL NAME & LOGO.png" style="width: 100%; height: 100px; object-fit: contain;">
-  </div>
-  
-  <div class="contact-info" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); text-align: right; width: 20%;">
-    <p style="color: white; font-weight: bold; margin: 0;">
-      <i class="fas fa-phone" style="margin-right: 5px;"></i> Contact Us: 123-456-7890
-    </p>
+
+  <div id="logo" style="width: 80%; margin-left: 20%;"> 
+    <img src="images/demo/SCHOOL NAME & LOGO.png" style="width: 100%; height: 100px; object-fit: fill;">
   </div>
 </header>
-
 <style>
-@keyframes glow {
-  from {
-    text-shadow: 0 0 5px #66aaff, 0 0 10px #66aaff;
-  }
-  to {
-    text-shadow: 0 0 10px #66aaff, 0 0 20px #66aaff, 0 0 30px #66aaff;
-  }
-}
-
 @media (max-width: 768px) {
   #header {
     flex-direction: column;
@@ -81,23 +63,34 @@
     width: 100%;
     margin-left: 0;
   }
-  .left-text, .contact-info {
+  .left-text {
     position: static;
     width: 100%;
     text-align: center;
     transform: none;
-  }
-  .left-text {
     margin-bottom: 5px;
-  }
-  .contact-info {
-    margin-top: 5px;
   }
 }
 </style>
-
-<!-- If you don't have Font Awesome already included, add this line: -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<style>
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px #66aaff, 0 0 10px #66aaff;
+  }
+  to {
+    text-shadow: 0 0 10px #66aaff, 0 0 20px #66aaff, 0 0 30px #66aaff;
+  }
+}
+@media (max-width: 768px) {
+  #header {
+    flex-direction: column;
+  }
+  .quote, #logo {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
+</style>
 </div>
 <div class="bgded overlay" style="background-image:url('images/demo/logo Presentation1.jpg');">
   
