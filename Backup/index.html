@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="">
+<!-- To declare your language - read more here: https://www.w3.org/International/questions/qa-html-language-declarations -->
+<head>
+<title>Welcome To SPN</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+<style>
+    .tcontainer {
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .ticker-wrap {
+        width: 100%;
+        padding-left: 100%;
+        
+    }
+    
+    @keyframes ticker {
+        100% {
+            transform: translate3d(-100%, 0, 0);
+        }
+    }
+    
+    .ticker-move {
+        display: inline-block;
+        white-space: nowrap;
+        padding-right: 100%;
+        animation-timing-function: linear;
+        animation: ticker 40s infinite;
+    }
+    .ticker-move:hover {
+        animation-play-state: paused;
+    }
+    
+    .ticker-item {
+        display: inline-block;
+        padding: 0 100px;
+        font-size: 20px;
+    }
+	.glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+	
+</style>
+</head>
+<body id="top">
+<div class="wrapper row1">
+<header style="display: flex; flex-direction: row; align-items: center; justify-content: space-between; gap: 5px; background: white; height: 8em;">
+  <span style="color: black" font-family:"Copperplate Gothic Bold"
+  >
+   <b> Empowering Education since 1990 </b>
+  </span>
+  <img src="images/demo/SCHOOL NAME & LOGO.png" style="width: 100%; height: 100%; object-fit: contain;">
+  <span
+    style="color: black"
+  >
+    <i class='fas fa-map-marker-alt' style='font-size:48px;color:red'></i>
+  </span>
+</header>
+<style>
+@media (max-width: 768px) {
+  #header {
+    flex-direction: column;
+    position: relative;
+  }
+  #logo {
+    width: 100%;
+    margin-left: 0;
+  }
+  .left-text {
+    position: static;
+    width: 100%;
+    text-align: center;
+    transform: none;
+    margin-bottom: 5px;
+  }
+}
+</style>
+<style>
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px #66aaff, 0 0 10px #66aaff;
+  }
+  to {
+    text-shadow: 0 0 10px #66aaff, 0 0 20px #66aaff, 0 0 30px #66aaff;
+  }
+}
+@media (max-width: 768px) {
+  #header {
+    flex-direction: column;
+  }
+  .quote, #logo {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
+</style>
+</div>
+<div class="bgded overlay" style="background-image:url('images/demo/logo Presentation1.jpg');">
+  
+  <div id="pageintro" class="hoc clear"> 
+        <div class="ticker-wrap">
+            <div class="ticker-move">
+		    <div class="ticker-item"><a href="https://gsrsar.github.io/Virtual-Examination/marks.html">CLICK TO View marks </a></div>
+		<div class="ticker-item"><a href="https://docs.google.com/forms/d/1Sp7Slj2MVeqvYZJyyIgTcsEy67QrdxRxz63_mLCCGAQ/viewform?chromeless=1&edit_requested=true  ">CLICK TO ATTEND 12 std MCQ test </a></div>
+		
+ 
+
+            </div>
+        </div>
+</div>
+<main class="hoc container clear"> 
+    <section id="introblocks">
+      <ul class="nospace group btmspace-80 elements elements-four">
+	      <span>
+        <h1 class="glow"> HISTORY </h1>
+	      <p>Our school was founded in 1990 by our emeinent sir.It took long steps to rich this peak.Its not as ingle man growth its a combined effort of our management,Teachers and Students.</p>
+		      </span>
+	      
+
+
+	         <li class="one_quarter">
+          <article><a href="#"><i class="fas fa-dove"></i></a>
+            <h6 class="heading">CORRESPONDENT </h6>
+            <a href=""><b style="color:black">About</b></style></a><br>
+			 <br>
+			 <a href=""><b style="color:orangered"><em>mail </em></b></style></a><br>
+            <br>
+<a href=""><b style="color:orangered"><em>Profile</em></b></style></a>
+<br>
+	</article>
+        </li>
+	         <li class="one_quarter">
+          <article><a href="#"><i class="fas fa-dove"></i></a>
+            <h6 class="heading"> CHAIRMAN </h6>
+            <a href=""><b style="color:black">About</b></style></a><br>
+			 <br>
+			 <a href=""><b style="color:orangered"><em>Connect</em></b></style></a><br>
+            <br>
+<a href=""><b style="color:orangered"><em>Profile</em></b></style></a>
+<br>
+	</article>
+        </li>
+	         <li class="one_quarter">
+          <article><a href="#"><i class="fas fa-dove"></i></a>
+            <h6 class="heading">Principal </h6>
+            <a href=""><b style="color:black">About</b></style></a><br>
+			 <br>
+			 <a href=""><b style="color:orangered"><em>mail</em></b></style></a><br>
+            <br>
+<a href=""><b style="color:orangered"><em>Click here to view profile</em></b></style></a>
+<br>
+	</article>
+       
+
+	      <li class="one_quarter">
+          <article><a href="#"><i class="fas fa-tasks"></i></a>
+            <h6 class="heading">9 Standard</h6>
+             <a href=""><b style="color:black">Lab Manual</b></style></a><br>
+			 <br>
+			 <a href=""><b style="color:blue"><em>Frequently Asked Questions</em></b></style></a><br>
+           <br>
+<a href=""><b style="color:blue"><em>Click here to view materials</em></b></style></a>
+<br>
+	    </article>
+        </li>
+        <li class="one_quarter">
+          <article><a href="#"><i class="fas fa-dove"></i></a>
+            <h6 class="heading">10 Standard </h6>
+            <a href=""><b style="color:black">Lab Manual</b></style></a><br>
+			 <br>
+			 <a href=""><b style="color:orangered"><em>Frequently Asked Questions</em></b></style></a><br>
+            <br>
+<a href=""><b style="color:orangered"><em>Click here to view materials</em></b></style></a>
+<br>
+	</article>
+        </li>
+        <li class="one_quarter">
+          <article><a href="#"><i class="fas fa-history"></i></a>
+            <h6 class="heading">11 Standard</h6>
+            <a href=""><b style="color:black">Lab Manual</b></style></a><br>
+			 <br>
+			 <a href=""><b style="color:chartreuse"><em>Frequently Asked Questions</em></b></style></a><br>
+           <br>
+<a href=""><b style="color:chartreuse"><em>Click here to view materials</em></b></style></a>
+<br>
+</article>
+        </li>
+        <li class="one_quarter">
+          <article><a href="#"><i class="fas fa-file-pdf"></i></a>
+            <h6 class="heading">12 Standard </h6>
+           <a href=""><b style="color:black">Lab Manual</b></style></a><br>
+			 <br>
+			 <a href=""><b style="color:Deeppink"><em>Frequently Asked Questions</em></b></style></a><br>
+                         <br>
+<a href=""><b style="color:Deeppink"><em>Click here to view materials</em></b></style></a>
+<br>
+          </article>
+        </li>
+	
+	 
+	  
+	    
+      </ul>
+    </section>
+    <div class="clear"></div>
+  </main>
+</div>
+<marquee behavior="scroll" direction="right" scrollamount="12">Copyright &copy; 2021 - All Rights Reserved - GSR@SAR</marquee>
+    
+</body>
+</html>

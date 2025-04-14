@@ -1,228 +1,366 @@
 <!DOCTYPE html>
-<html lang="">
-<!-- To declare your language - read more here: https://www.w3.org/International/questions/qa-html-language-declarations -->
+<html lang="en">
 <head>
-<title>Welcome To SPN</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
-<style>
-    .tcontainer {
-        width: 100%;
-        overflow: hidden;
-    }
-    
-    .ticker-wrap {
-        width: 100%;
-        padding-left: 100%;
-        
-    }
-    
-    @keyframes ticker {
-        100% {
-            transform: translate3d(-100%, 0, 0);
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S.P.N Matriculation Higher Secondary School</title>
+    <link rel="icon" href="/images/logo.jpg" type="image/jpeg">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
         }
-    }
-    
-    .ticker-move {
-        display: inline-block;
-        white-space: nowrap;
-        padding-right: 100%;
-        animation-timing-function: linear;
-        animation: ticker 40s infinite;
-    }
-    .ticker-move:hover {
-        animation-play-state: paused;
-    }
-    
-    .ticker-item {
-        display: inline-block;
-        padding: 0 100px;
-        font-size: 20px;
-    }
-	.glow {
-  font-size: 80px;
-  color: #fff;
-  text-align: center;
-  animation: glow 1s ease-in-out infinite alternate;
-}
 
-@-webkit-keyframes glow {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-  }
-  
-  to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
-  }
-}
-	
-</style>
+        .ticker-news {
+            animation: ticker 30s linear infinite;
+        }
+
+        @keyframes ticker {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%);
+        }
+
+        .slide-in {
+            animation: slideIn 0.5s ease forwards;
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .pulse-effect {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+    </style>
 </head>
-<body id="top">
-<div class="wrapper row1">
-<header style="display: flex; flex-direction: row; align-items: center; justify-content: space-between; gap: 5px; background: white; height: 8em;">
-  <span style="color: black" font-family:"Copperplate Gothic Bold"
-  >
-   <b> Empowering Education since 1990 </b>
-  </span>
-  <img src="images/demo/SCHOOL NAME & LOGO.png" style="width: 100%; height: 100%; object-fit: contain;">
-  <span
-    style="color: black"
-  >
-    <i class='fas fa-map-marker-alt' style='font-size:48px;color:red'></i>
-  </span>
-</header>
-<style>
-@media (max-width: 768px) {
-  #header {
-    flex-direction: column;
-    position: relative;
-  }
-  #logo {
-    width: 100%;
-    margin-left: 0;
-  }
-  .left-text {
-    position: static;
-    width: 100%;
-    text-align: center;
-    transform: none;
-    margin-bottom: 5px;
-  }
-}
-</style>
-<style>
-@keyframes glow {
-  from {
-    text-shadow: 0 0 5px #66aaff, 0 0 10px #66aaff;
-  }
-  to {
-    text-shadow: 0 0 10px #66aaff, 0 0 20px #66aaff, 0 0 30px #66aaff;
-  }
-}
-@media (max-width: 768px) {
-  #header {
-    flex-direction: column;
-  }
-  .quote, #logo {
-    width: 100%;
-    margin: 5px 0;
-  }
-}
-</style>
-</div>
-<div class="bgded overlay" style="background-image:url('images/demo/logo Presentation1.jpg');">
-  
-  <div id="pageintro" class="hoc clear"> 
-        <div class="ticker-wrap">
-            <div class="ticker-move">
-		    <div class="ticker-item"><a href="https://gsrsar.github.io/Virtual-Examination/marks.html">CLICK TO View marks </a></div>
-		<div class="ticker-item"><a href="https://docs.google.com/forms/d/1Sp7Slj2MVeqvYZJyyIgTcsEy67QrdxRxz63_mLCCGAQ/viewform?chromeless=1&edit_requested=true  ">CLICK TO ATTEND 12 std MCQ test </a></div>
-		
- 
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <!-- Logo and Name -->
+            <div class="flex items-center justify-between py-4 border-b border-indigo-100">
+                <div class="w-14 h-14 gradient-bg rounded-full flex items-center justify-center text-white font-bold shadow-lg transform hover:scale-105 transition-transform">
+                    <i class="fas fa-graduation-cap text-2xl"></i>
+                </div>
+                <img src="/images/banner.png" alt="School Banner" class="w-[60%] h-[80px] object-cover">
+                <div class="w-18 h-18 bg-indigo-100 rounded-full flex items-center justify-center overflow-hidden shadow-md transform hover:scale-105 transition-transform">
+                    <img src="/images/logo.jpg" alt="School Photo" class="w-full h-full object-cover">
+                </div>
+            </div>
+            <!-- Navigation -->
+            <nav class="flex flex-wrap py-3">
+                <a href="#" class="px-4 py-2 font-medium text-indigo-800 hover:text-indigo-600 transition-colors border-b-2 border-transparent hover:border-indigo-500">
+                    <i class="fas fa-home mr-1"></i> Home
+                </a>
+                <a href="#" class="px-4 py-2 font-medium text-indigo-800 hover:text-indigo-600 transition-colors border-b-2 border-transparent hover:border-indigo-500">
+                    <i class="fas fa-info-circle mr-1"></i> About Us
+                </a>
+                <a href="#" class="px-4 py-2 font-medium text-indigo-800 hover:text-indigo-600 transition-colors border-b-2 border-transparent hover:border-indigo-500">
+                    <i class="fas fa-users mr-1"></i> Faculties
+                </a>
+                <a href="#" class="px-4 py-2 font-medium text-indigo-800 hover:text-indigo-600 transition-colors border-b-2 border-transparent hover:border-indigo-500">
+                    <i class="fas fa-images mr-1"></i> Gallery
+                </a>
+                <a href="#" class="px-4 py-2 font-medium text-indigo-800 hover:text-indigo-600 transition-colors border-b-2 border-transparent hover:border-indigo-500">
+                    <i class="fas fa-envelope mr-1"></i> Contact Us
+                </a>
+            </nav>
+        </div>
+    </header>
 
+    <!-- Ticker News Scroll -->
+    <div class="bg-indigo-900 text-white py-3 overflow-hidden">
+        <div class="max-w-6xl mx-auto px-4 relative">
+            <div class="ticker-news whitespace-nowrap">
+                <span class="inline-block"><i class="fas fa-bell mr-2"></i> Important Announcement: Upcoming registration begins next week • </span>
+                <span class="inline-block"><i class="fas fa-trophy mr-2"></i> Annual Sports Day scheduled for May 15th • </span>
+                <span class="inline-block"><i class="fas fa-laptop mr-2"></i> New computer lab inauguration on April 30th • </span>
+                <span class="inline-block"><i class="fas fa-book mr-2"></i> Library hours extended during exam period • </span>
             </div>
         </div>
-</div>
-<main class="hoc container clear"> 
-    <section id="introblocks">
-      <ul class="nospace group btmspace-80 elements elements-four">
-	      <span>
-        <h1 class="glow"> HISTORY </h1>
-	      <p>Our school was founded in 1990 by our emeinent sir.It took long steps to rich this peak.Its not as ingle man growth its a combined effort of our management,Teachers and Students.</p>
-		      </span>
-	      
+    </div>
 
+    <!-- Hero Banner -->
+    <div class="gradient-bg py-12 text-white mb-6">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Welcome to S.P.N Matriculation Higher Secondary School</h2>
+            <p class="text-lg md:text-xl mb-6">Empowering Education, Shaping Minds and Building Futures. Since 1990</p>
+            <button class="bg-white text-indigo-800 font-semibold py-2 px-6 rounded-full shadow-lg hover:bg-indigo-100 transition-colors">
+                Explore Programs
+            </button>
+        </div>
+    </div>
 
-	         <li class="one_quarter">
-          <article><a href="#"><i class="fas fa-dove"></i></a>
-            <h6 class="heading">CORRESPONDENT </h6>
-            <a href=""><b style="color:black">About</b></style></a><br>
-			 <br>
-			 <a href=""><b style="color:orangered"><em>mail </em></b></style></a><br>
-            <br>
-<a href=""><b style="color:orangered"><em>Profile</em></b></style></a>
-<br>
-	</article>
-        </li>
-	         <li class="one_quarter">
-          <article><a href="#"><i class="fas fa-dove"></i></a>
-            <h6 class="heading"> CHAIRMAN </h6>
-            <a href=""><b style="color:black">About</b></style></a><br>
-			 <br>
-			 <a href=""><b style="color:orangered"><em>Connect</em></b></style></a><br>
-            <br>
-<a href=""><b style="color:orangered"><em>Profile</em></b></style></a>
-<br>
-	</article>
-        </li>
-	         <li class="one_quarter">
-          <article><a href="#"><i class="fas fa-dove"></i></a>
-            <h6 class="heading">Principal </h6>
-            <a href=""><b style="color:black">About</b></style></a><br>
-			 <br>
-			 <a href=""><b style="color:orangered"><em>mail</em></b></style></a><br>
-            <br>
-<a href=""><b style="color:orangered"><em>Click here to view profile</em></b></style></a>
-<br>
-	</article>
-       
+    <!-- Photo Slider -->
+    <div class="max-w-6xl mx-auto px-4 -mt-8">
+        <div class="relative h-96 md:h-80 sm:h-64 bg-white rounded-xl overflow-hidden shadow-xl">
+            <div class="slider flex h-full transition-transform duration-500">
+                <div class="slide min-w-full h-full flex items-center justify-center bg-indigo-50">
+                    <img src="/images/banner.png" alt="Campus View" class="object-cover w-full h-full">
+                    <div class="z-50 absolute bottom-0 left-0 right-0 bg-gradient-to-t from-indigo-900 to-transparent text-white p-4">
+                        <h3 class="font-bold text-xl">Our Beautiful Campus</h3>
+                    </div>
+                </div>
+                <div class="slide min-w-full h-full flex items-center justify-center bg-indigo-50">
+                    <img src="/images/banner.png" alt="Students" class="object-cover w-full h-full">
+                    <div class="z-50 absolute bottom-0 left-0 right-0 bg-gradient-to-t from-indigo-900 to-transparent text-white p-4">
+                        <h3 class="font-bold text-xl">Student Activities</h3>
+                    </div>
+                </div>
+                <div class="slide min-w-full h-full flex items-center justify-center bg-indigo-50">
+                    <img src="/images/banner.png" alt="Library" class="object-cover w-full h-full">
+                    <div class="z-50 absolute bottom-0 left-0 right-0 bg-gradient-to-t from-indigo-900 to-transparent text-white p-4">
+                        <h3 class="font-bold text-xl">Modern Library</h3>
+                    </div>
+                </div>
+            </div>
+            <!-- Slider Controls -->
+            <button class="slider-btn prev absolute top-1/2 left-4 transform -translate-y-1/2 bg-white text-indigo-900 w-10 h-10 rounded-full flex items-center justify-center shadow-md hover:bg-indigo-100 transition-colors">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="slider-btn next absolute top-1/2 right-4 transform -translate-y-1/2 bg-white text-indigo-900 w-10 h-10 rounded-full flex items-center justify-center shadow-md hover:bg-indigo-100 transition-colors">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            
+            <!-- Slider Indicators -->
+            <div class="absolute bottom-4 left-0 right-0 flex justify-center gap-2">
+                <button class="slide-indicator w-3 h-3 rounded-full bg-white opacity-50 hover:opacity-100 transition-opacity"></button>
+                <button class="slide-indicator w-3 h-3 rounded-full bg-white opacity-50 hover:opacity-100 transition-opacity"></button>
+                <button class="slide-indicator w-3 h-3 rounded-full bg-white opacity-50 hover:opacity-100 transition-opacity"></button>
+            </div>
+        </div>
+    </div>
 
-	      <li class="one_quarter">
-          <article><a href="#"><i class="fas fa-tasks"></i></a>
-            <h6 class="heading">9 Standard</h6>
-             <a href=""><b style="color:black">Lab Manual</b></style></a><br>
-			 <br>
-			 <a href=""><b style="color:blue"><em>Frequently Asked Questions</em></b></style></a><br>
-           <br>
-<a href=""><b style="color:blue"><em>Click here to view materials</em></b></style></a>
-<br>
-	    </article>
-        </li>
-        <li class="one_quarter">
-          <article><a href="#"><i class="fas fa-dove"></i></a>
-            <h6 class="heading">10 Standard </h6>
-            <a href=""><b style="color:black">Lab Manual</b></style></a><br>
-			 <br>
-			 <a href=""><b style="color:orangered"><em>Frequently Asked Questions</em></b></style></a><br>
-            <br>
-<a href=""><b style="color:orangered"><em>Click here to view materials</em></b></style></a>
-<br>
-	</article>
-        </li>
-        <li class="one_quarter">
-          <article><a href="#"><i class="fas fa-history"></i></a>
-            <h6 class="heading">11 Standard</h6>
-            <a href=""><b style="color:black">Lab Manual</b></style></a><br>
-			 <br>
-			 <a href=""><b style="color:chartreuse"><em>Frequently Asked Questions</em></b></style></a><br>
-           <br>
-<a href=""><b style="color:chartreuse"><em>Click here to view materials</em></b></style></a>
-<br>
-</article>
-        </li>
-        <li class="one_quarter">
-          <article><a href="#"><i class="fas fa-file-pdf"></i></a>
-            <h6 class="heading">12 Standard </h6>
-           <a href=""><b style="color:black">Lab Manual</b></style></a><br>
-			 <br>
-			 <a href=""><b style="color:Deeppink"><em>Frequently Asked Questions</em></b></style></a><br>
-                         <br>
-<a href=""><b style="color:Deeppink"><em>Click here to view materials</em></b></style></a>
-<br>
-          </article>
-        </li>
-	
-	 
-	  
-	    
-      </ul>
-    </section>
-    <div class="clear"></div>
-  </main>
-</div>
-<marquee behavior="scroll" direction="right" scrollamount="12">Copyright &copy; 2021 - All Rights Reserved - GSR@SAR</marquee>
-    
+    <!-- Quick Stats -->
+    <div class="max-w-6xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-4 gap-6">
+        <div class="bg-white rounded-lg shadow-md p-6 text-center transform hover:scale-105 transition-transform">
+            <div class="text-indigo-600 text-4xl mb-2"><i class="fas fa-user-graduate"></i></div>
+            <h3 class="text-2xl font-bold text-indigo-900">2500+</h3>
+            <p class="text-gray-600">Students</p>
+        </div>
+        <div class="bg-white rounded-lg shadow-md p-6 text-center transform hover:scale-105 transition-transform">
+            <div class="text-indigo-600 text-4xl mb-2"><i class="fas fa-chalkboard-teacher"></i></div>
+            <h3 class="text-2xl font-bold text-indigo-900">120+</h3>
+            <p class="text-gray-600">Expert Faculty</p>
+        </div>
+        <div class="bg-white rounded-lg shadow-md p-6 text-center transform hover:scale-105 transition-transform">
+            <div class="text-indigo-600 text-4xl mb-2"><i class="fas fa-award"></i></div>
+            <h3 class="text-2xl font-bold text-indigo-900">50+</h3>
+            <p class="text-gray-600">Awards</p>
+        </div>
+        <div class="bg-white rounded-lg shadow-md p-6 text-center transform hover:scale-105 transition-transform">
+            <div class="text-indigo-600 text-4xl mb-2"><i class="fas fa-flask"></i></div>
+            <h3 class="text-2xl font-bold text-indigo-900">25+</h3>
+            <p class="text-gray-600">Labs</p>
+        </div>
+    </div>
+
+    <!-- Results Section -->
+    <div class="max-w-6xl mx-auto px-4 mt-8">
+        <h2 class="text-2xl font-bold text-indigo-900 mb-6 flex items-center">
+            <i class="fas fa-chart-line mr-2"></i> Latest Results
+        </h2>
+        <div class="bg-white p-6 rounded-lg shadow-md mb-6 border-l-4 border-indigo-600 hover:shadow-xl transition-shadow">
+            <h3 class="text-xl font-bold mb-2 text-indigo-800">Final Results</h3>
+            <p class="text-gray-700 mb-4">Results for the winter examinations have been published. Top performers will be recognized at the upcoming convocation ceremony.</p>
+            <a href="/marks.html" class="bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700 transition-colors inline-flex items-center">
+                <i class="fas fa-eye mr-2"></i> View Results
+            </a>
+        </div>
+        
+        <!-- Pagination -->
+        <div class="flex justify-center gap-2 my-4">
+            <a href="#" class="w-10 h-10 flex items-center justify-center bg-white rounded-full shadow-md text-indigo-600 hover:bg-indigo-100 transition-colors">9</a>
+            <a href="#" class="w-10 h-10 flex items-center justify-center bg-indigo-600 text-white rounded-full shadow-md">10</a>
+        </div>
+    </div>
+
+    <!-- Announcements Section -->
+    <div class="max-w-6xl mx-auto px-4 mt-12">
+        <h2 class="text-2xl font-bold text-indigo-900 mb-6 flex items-center">
+            <i class="fas fa-bullhorn mr-2"></i> Important Announcements
+        </h2>
+        <div class="bg-white p-6 rounded-lg shadow-md mb-6 border-l-4 border-yellow-500 hover:shadow-xl transition-shadow">
+            <h3 class="text-xl font-bold mb-2 text-indigo-800">Admission Open for 2025-2026</h3>
+            <p class="text-gray-700 mb-2">Applications are now being accepted for the new academic year. Early applicants will receive priority consideration for scholarships and financial aid.</p>
+            <div class="flex justify-between items-center mt-4">
+                <span class="text-sm text-gray-500"><i class="far fa-calendar-alt mr-1"></i> Posted: April 10, 2025</span>
+                <button class="bg-yellow-500 text-white py-2 px-4 rounded hover:bg-yellow-600 transition-colors inline-flex items-center">
+                    <i class="fas fa-arrow-right mr-2"></i> Apply Now
+                </button>
+            </div>
+        </div>
+        
+        <!-- Pagination -->
+        <div class="flex justify-end gap-2 my-4">
+            <a href="#" class="w-10 h-10 flex items-center justify-center bg-white rounded-full shadow-md text-indigo-600 hover:bg-indigo-100 transition-colors">11</a>
+            <a href="#" class="w-10 h-10 flex items-center justify-center bg-white rounded-full shadow-md text-indigo-600 hover:bg-indigo-100 transition-colors">12</a>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="gradient-bg py-16 mt-16 text-white">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
+            <div class="mb-6 md:mb-0 md:w-2/3">
+                <h2 class="text-3xl font-bold mb-2">Ready to Join Our Community?</h2>
+                <p class="text-lg">Take the first step towards your future today!</p>
+            </div>
+            <div>
+                <button class="bg-white text-indigo-800 font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-indigo-100 transition-colors pulse-effect">
+                    <i class="fas fa-user-plus mr-2"></i> Apply Now
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-indigo-900 text-white py-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">About Us</h3>
+                    <p class="text-indigo-200 mb-4">Our school was founded in 1990 by our emeinent sir.It took long steps to rich this peak.Its not as ingle man growth its a combined effort of our management,Teachers and Students.</p>
+                    <div class="flex gap-4">
+                        <a href="#" class="text-white hover:text-indigo-200 transition-colors"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white hover:text-indigo-200 transition-colors"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white hover:text-indigo-200 transition-colors"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white hover:text-indigo-200 transition-colors"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul>
+                        <li class="mb-2"><a href="#" class="text-indigo-200 hover:text-white transition-colors">Academic Calendar</a></li>
+                        <li class="mb-2"><a href="#" class="text-indigo-200 hover:text-white transition-colors">Events</a></li>
+                        <li class="mb-2"><a href="#" class="text-indigo-200 hover:text-white transition-colors">Student Portal</a></li>
+                        <li class="mb-2"><a href="#" class="text-indigo-200 hover:text-white transition-colors">Career</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Info</h3>
+                    <address class="not-italic text-indigo-200">
+                        <p class="mb-2"><i class="fas fa-map-marker-alt mr-2"></i> India</p>
+                        <p class="mb-2"><i class="fas fa-phone-alt mr-2"></i> (+91) 9876543210</p>
+                        <p class="mb-2"><i class="fas fa-envelope mr-2"></i> info@brightfield.edu</p>
+                    </address>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Newsletter</h3>
+                    <p class="text-indigo-200 mb-4">Subscribe to our newsletter to get updates.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your Email" class="px-4 py-2 rounded-l-lg w-full focus:outline-none text-gray-800">
+                        <button type="submit" class="bg-indigo-600 hover:bg-indigo-700 px-4 py-2 rounded-r-lg transition-colors">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-indigo-800 mt-8 pt-8 text-center">
+                <p>© 2025 S.P.N Matriculation Higher Secondary School. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Ticker animation is handled by CSS now
+        
+        // Slider functionality
+        (function() {
+            const slider = document.querySelector('.slider');
+            const slides = document.querySelectorAll('.slide');
+            const prevBtn = document.querySelector('.slider-btn.prev');
+            const nextBtn = document.querySelector('.slider-btn.next');
+            const indicators = document.querySelectorAll('.slide-indicator');
+            let currentSlide = 0;
+            const slideCount = slides.length;
+            
+            // Set initial position and active indicator
+            updateSlider();
+            
+            // Auto slide functionality
+            let slideInterval = setInterval(nextSlide, 5000);
+            
+            function updateSlider() {
+                slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+                
+                // Update indicators
+                indicators.forEach((indicator, index) => {
+                    if (index === currentSlide) {
+                        indicator.classList.add('opacity-100');
+                        indicator.classList.remove('opacity-50');
+                    } else {
+                        indicator.classList.add('opacity-50');
+                        indicator.classList.remove('opacity-100');
+                    }
+                });
+            }
+            
+            function nextSlide() {
+                currentSlide = (currentSlide + 1) % slideCount;
+                updateSlider();
+            }
+            
+            function prevSlide() {
+                currentSlide = (currentSlide - 1 + slideCount) % slideCount;
+                updateSlider();
+            }
+            
+            // Add event listeners for buttons
+            nextBtn.addEventListener('click', function() {
+                clearInterval(slideInterval);
+                nextSlide();
+                slideInterval = setInterval(nextSlide, 5000);
+            });
+            
+            prevBtn.addEventListener('click', function() {
+                clearInterval(slideInterval);
+                prevSlide();
+                slideInterval = setInterval(nextSlide, 5000);
+            });
+            
+            // Add event listeners for indicators
+            indicators.forEach((indicator, index) => {
+                indicator.addEventListener('click', function() {
+                    clearInterval(slideInterval);
+                    currentSlide = index;
+                    updateSlider();
+                    slideInterval = setInterval(nextSlide, 5000);
+                });
+            });
+            
+            // Animation on scroll
+            const animateElements = document.querySelectorAll('.animate-on-scroll');
+            
+            function checkScroll() {
+                animateElements.forEach(element => {
+                    const elementTop = element.getBoundingClientRect().top;
+                    const windowHeight = window.innerHeight;
+                    
+                    if (elementTop < windowHeight - 100) {
+                        element.classList.add('slide-in');
+                    }
+                });
+            }
+            
+            // Initial check
+            checkScroll();
+            
+            // Listen for scroll
+            window.addEventListener('scroll', checkScroll);
+        })();
+    </script>
 </body>
 </html>
