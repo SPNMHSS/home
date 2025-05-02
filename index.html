@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,8 @@
     <link rel="icon" href="images/logo.jpg" type="image/jpeg">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <style>
         body {
             font-family: 'Poppins', sans-serif;
@@ -18,8 +20,13 @@
         }
 
         @keyframes ticker {
-            0% { transform: translateX(100%); }
-            100% { transform: translateX(-100%); }
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
         }
 
         .gradient-bg {
@@ -31,8 +38,15 @@
         }
 
         @keyframes slideIn {
-            from { transform: translateY(20px); opacity: 0; }
-            to { transform: translateY(0); opacity: 1; }
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
         }
 
         .pulse-effect {
@@ -40,41 +54,57 @@
         }
 
         @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-            100% { transform: scale(1); }
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
+
+            100% {
+                transform: scale(1);
+            }
         }
     </style>
 </head>
+
 <body class="bg-gray-50">
     <!-- Header -->
     <header class="bg-white shadow-lg sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-4">
             <!-- Logo and Name -->
             <div class="flex items-center justify-between py-4 border-b border-indigo-100">
-                <div class="w-14 h-14 gradient-bg rounded-full flex items-center justify-center text-white font-bold shadow-lg transform hover:scale-105 transition-transform">
+                <div
+                    class="w-14 h-14 gradient-bg rounded-full flex items-center justify-center text-white font-bold shadow-lg transform hover:scale-105 transition-transform">
                     <i class="fas fa-graduation-cap text-2xl"></i>
                 </div>
                 <img src="images/banner.png" alt="School Banner" class="w-[60%] h-[80px] object-contain">
-                <div class="w-18 h-18 bg-indigo-100 rounded-full flex items-center justify-center overflow-hidden shadow-md transform hover:scale-105 transition-transform">
+                <div
+                    class="w-18 h-18 bg-indigo-100 rounded-full flex items-center justify-center overflow-hidden shadow-md transform hover:scale-105 transition-transform">
                     <img src="images/logo.jpg" alt="School Photo" class="w-full h-full object-cover">
                 </div>
             </div>
             <!-- Navigation -->
             <nav class="flex flex-wrap py-3">
-                <a href="#" class="px-4 py-2 font-medium text-indigo-800 hover:text-indigo-600 transition-colors border-b-2 border-transparent hover:border-indigo-500">
+                <a href="#"
+                    class="px-4 py-2 font-medium text-indigo-800 hover:text-indigo-600 transition-colors border-b-2 border-transparent hover:border-indigo-500">
                     <i class="fas fa-home mr-1"></i> Home
                 </a>
-                <a href="#" class="px-4 py-2 font-medium text-indigo-800 hover:text-indigo-600 transition-colors border-b-2 border-transparent hover:border-indigo-500">
+                <a href="#"
+                    class="px-4 py-2 font-medium text-indigo-800 hover:text-indigo-600 transition-colors border-b-2 border-transparent hover:border-indigo-500">
                     <i class="fas fa-info-circle mr-1"></i> About Us
                 </a>
-                <a href="#" class="px-4 py-2 font-medium text-indigo-800 hover:text-indigo-600 transition-colors border-b-2 border-transparent hover:border-indigo-500">
+                <a href="#"
+                    class="px-4 py-2 font-medium text-indigo-800 hover:text-indigo-600 transition-colors border-b-2 border-transparent hover:border-indigo-500">
                     <i class="fas fa-users mr-1"></i> Faculties
                 </a>
-                <a href="#" class="px-4 py-2 font-medium text-indigo-800 hover:text-indigo-600 transition-colors border-b-2 border-transparent hover:border-indigo-500">
+                <a href="#"
+                    class="px-4 py-2 font-medium text-indigo-800 hover:text-indigo-600 transition-colors border-b-2 border-transparent hover:border-indigo-500">
                     <i class="fas fa-images mr-1"></i> Gallery
                 </a>
-                <a href="#" class="px-4 py-2 font-medium text-indigo-800 hover:text-indigo-600 transition-colors border-b-2 border-transparent hover:border-indigo-500">
+                <a href="#"
+                    class="px-4 py-2 font-medium text-indigo-800 hover:text-indigo-600 transition-colors border-b-2 border-transparent hover:border-indigo-500">
                     <i class="fas fa-envelope mr-1"></i> Contact Us
                 </a>
             </nav>
@@ -85,8 +115,9 @@
     <div class="bg-indigo-900 text-white py-3 overflow-hidden">
         <div class="max-w-6xl mx-auto px-4 relative">
             <div class="ticker-news whitespace-nowrap">
-                <span class="inline-block"><i class="fas fa-bell mr-2"></i> <a href="marks">Annual Exam Results Published-Click Here</span>
-               <!-- <span class="inline-block"><i class="fas fa-trophy mr-2"></i> Annual Sports Day scheduled for May 15th • </span>
+                <span class="inline-block"><i class="fas fa-bell mr-2"></i> <a href="marks">Annual Exam Results
+                        Published-Click Here</span>
+                <!-- <span class="inline-block"><i class="fas fa-trophy mr-2"></i> Annual Sports Day scheduled for May 15th • </span>
                 <span class="inline-block"><i class="fas fa-laptop mr-2"></i> New computer lab inauguration on April 30th • </span>
                 <span class="inline-block"><i class="fas fa-book mr-2"></i> Library hours extended during exam period • </span>-->
             </div>
@@ -98,7 +129,8 @@
         <div class="max-w-6xl mx-auto px-4 text-center">
             <h2 class="text-3xl md:text-4xl font-bold mb-4">Welcome to S.P.N Matriculation Higher Secondary School</h2>
             <p class="text-lg md:text-xl mb-6">Empowering Education, Shaping Minds and Building Futures. Since 1993</p>
-            <button class="bg-white text-indigo-800 font-semibold py-2 px-6 rounded-full shadow-lg hover:bg-indigo-100 transition-colors">
+            <button
+                class="bg-white text-indigo-800 font-semibold py-2 px-6 rounded-full shadow-lg hover:bg-indigo-100 transition-colors">
                 Explore Programs
             </button>
         </div>
@@ -110,36 +142,44 @@
             <div class="slider flex h-full transition-transform duration-500">
                 <div class="slide min-w-full h-full flex items-center justify-center bg-indigo-50">
                     <img src="images/School Entrance.jpeg" alt="Campus View" class="object-cover w-full h-full">
-                    <div class="z-50 absolute bottom-0 left-0 right-0 bg-gradient-to-t from-indigo-900 to-transparent text-white p-4">
+                    <div
+                        class="z-50 absolute bottom-0 left-0 right-0 bg-gradient-to-t from-indigo-900 to-transparent text-white p-4">
                         <h3 class="font-bold text-xl">Our Beautiful Campus</h3>
                     </div>
                 </div>
                 <div class="slide min-w-full h-full flex items-center justify-center bg-indigo-50">
                     <img src="images/Boundary wall.jpeg" alt="Students" class="object-cover w-full h-full">
-                    <div class="z-50 absolute bottom-0 left-0 right-0 bg-gradient-to-t from-indigo-900 to-transparent text-white p-4">
+                    <div
+                        class="z-50 absolute bottom-0 left-0 right-0 bg-gradient-to-t from-indigo-900 to-transparent text-white p-4">
                         <h3 class="font-bold text-xl">Our Beautiful Campus</h3>
                     </div>
                 </div>
                 <div class="slide min-w-full h-full flex items-center justify-center bg-indigo-50">
                     <img src="images/DSC_4259.JPG" alt="Library" class="object-cover w-full h-full">
-                    <div class="z-50 absolute bottom-0 left-0 right-0 bg-gradient-to-t from-indigo-900 to-transparent text-white p-4">
+                    <div
+                        class="z-50 absolute bottom-0 left-0 right-0 bg-gradient-to-t from-indigo-900 to-transparent text-white p-4">
                         <h3 class="font-bold text-xl">Our Beautiful Campus</h3>
                     </div>
                 </div>
             </div>
             <!-- Slider Controls -->
-            <button class="slider-btn prev absolute top-1/2 left-4 transform -translate-y-1/2 bg-white text-indigo-900 w-10 h-10 rounded-full flex items-center justify-center shadow-md hover:bg-indigo-100 transition-colors">
+            <button
+                class="slider-btn prev absolute top-1/2 left-4 transform -translate-y-1/2 bg-white text-indigo-900 w-10 h-10 rounded-full flex items-center justify-center shadow-md hover:bg-indigo-100 transition-colors">
                 <i class="fas fa-chevron-left"></i>
             </button>
-            <button class="slider-btn next absolute top-1/2 right-4 transform -translate-y-1/2 bg-white text-indigo-900 w-10 h-10 rounded-full flex items-center justify-center shadow-md hover:bg-indigo-100 transition-colors">
+            <button
+                class="slider-btn next absolute top-1/2 right-4 transform -translate-y-1/2 bg-white text-indigo-900 w-10 h-10 rounded-full flex items-center justify-center shadow-md hover:bg-indigo-100 transition-colors">
                 <i class="fas fa-chevron-right"></i>
             </button>
-            
+
             <!-- Slider Indicators -->
             <div class="absolute bottom-4 left-0 right-0 flex justify-center gap-2">
-                <button class="slide-indicator w-3 h-3 rounded-full bg-white opacity-50 hover:opacity-100 transition-opacity"></button>
-                <button class="slide-indicator w-3 h-3 rounded-full bg-white opacity-50 hover:opacity-100 transition-opacity"></button>
-                <button class="slide-indicator w-3 h-3 rounded-full bg-white opacity-50 hover:opacity-100 transition-opacity"></button>
+                <button
+                    class="slide-indicator w-3 h-3 rounded-full bg-white opacity-50 hover:opacity-100 transition-opacity"></button>
+                <button
+                    class="slide-indicator w-3 h-3 rounded-full bg-white opacity-50 hover:opacity-100 transition-opacity"></button>
+                <button
+                    class="slide-indicator w-3 h-3 rounded-full bg-white opacity-50 hover:opacity-100 transition-opacity"></button>
             </div>
         </div>
     </div>
@@ -173,58 +213,67 @@
         <h2 class="text-2xl font-bold text-indigo-900 mb-6 flex items-center">
             <i class="fas fa-chart-line mr-2"></i> Latest Results
         </h2>
-        <div class="bg-white p-6 rounded-lg shadow-md mb-6 border-l-4 border-indigo-600 hover:shadow-xl transition-shadow">
+        <div
+            class="bg-white p-6 rounded-lg shadow-md mb-6 border-l-4 border-indigo-600 hover:shadow-xl transition-shadow">
             <h3 class="text-xl font-bold mb-2 text-indigo-800">Final Results</h3>
-            <p class="text-gray-700 mb-4">Results for the Annual examinations have been published. Top performers will be recognized at the upcoming convocation ceremony.</p>
-            <a href="marks" class="bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700 transition-colors inline-flex items-center">
+            <p class="text-gray-700 mb-4">Results for the Annual examinations have been published. Top performers will
+                be recognized at the upcoming convocation ceremony.</p>
+            <a href="marks"
+                class="bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700 transition-colors inline-flex items-center">
                 <i class="fas fa-eye mr-2"></i> View Results
             </a>
         </div>
 
         <div class="max-w-6xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-4 gap-6">
-        <div class="bg-white rounded-lg shadow-md p-6 text-center transform hover:scale-105 transition-transform">
-            
-            <h3 class="text-2xl font-bold text-indigo-900">9 Standard</h3>
-            <p class="text-gray-600">Click to view materials</p>
-        </div>
-        <div class="bg-white rounded-lg shadow-md p-6 text-center transform hover:scale-105 transition-transform">
-            <h3 class="text-2xl font-bold text-indigo-900">10 Standard</h3>
-            <p class="text-gray-600">Click to view materials</p>
-        </div>
-        <div class="bg-white rounded-lg shadow-md p-6 text-center transform hover:scale-105 transition-transform">
-            
-            <h3 class="text-2xl font-bold text-indigo-900">11 Standard</h3>
-            <p class="text-gray-600">Click to view materials</p>
-        </div>
-        <div class="bg-white rounded-lg shadow-md p-6 text-center transform hover:scale-105 transition-transform">
-           
-            <h3 class="text-2xl font-bold text-indigo-900">12 Standard</h3>
-            <p class="text-gray-600">Click to view materials</p>
-        </div>
-    </div>
-        
-       
+            <div class="bg-white rounded-lg shadow-md p-6 text-center transform hover:scale-105 transition-transform">
 
-    <!-- Announcements Section -->
-    <div class="max-w-6xl mx-auto px-4 mt-12">
-        <h2 class="text-2xl font-bold text-indigo-900 mb-6 flex items-center">
-            <i class="fas fa-bullhorn mr-2"></i> Important Announcements
-        </h2>
-        <div class="bg-white p-6 rounded-lg shadow-md mb-6 border-l-4 border-yellow-500 hover:shadow-xl transition-shadow">
-            <h3 class="text-xl font-bold mb-2 text-indigo-800">Admission Open for 2025-2026</h3>
-            <p class="text-gray-700 mb-2">Applications are now being accepted for the new academic year. Early applicants will receive priority consideration for scholarships and financial aid.</p>
-            <div class="flex justify-between items-center mt-4">
-                <span class="text-sm text-gray-500"><i class="far fa-calendar-alt mr-1"></i> Posted: April 10, 2025</span>
-                <button class="bg-yellow-500 text-white py-2 px-4 rounded hover:bg-yellow-600 transition-colors inline-flex items-center">
-                    <i class="fas fa-arrow-right mr-2"></i> Apply Now
-                </button>
+                <h3 class="text-2xl font-bold text-indigo-900">9 Standard</h3>
+                <p class="text-gray-600">Click to view materials</p>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-6 text-center transform hover:scale-105 transition-transform">
+                <h3 class="text-2xl font-bold text-indigo-900">10 Standard</h3>
+                <p class="text-gray-600">Click to view materials</p>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-6 text-center transform hover:scale-105 transition-transform">
+
+                <h3 class="text-2xl font-bold text-indigo-900">11 Standard</h3>
+                <p class="text-gray-600">Click to view materials</p>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-6 text-center transform hover:scale-105 transition-transform">
+
+                <h3 class="text-2xl font-bold text-indigo-900">12 Standard</h3>
+                <p class="text-gray-600">Click to view materials</p>
             </div>
         </div>
-        
-        <!-- Pagination -->
-        <div class="flex justify-end gap-2 my-4">
-            <a href="#" class="w-10 h-10 flex items-center justify-center bg-white rounded-full shadow-md text-indigo-600 hover:bg-indigo-100 transition-colors">11</a>
-            <a href="#" class="w-10 h-10 flex items-center justify-center bg-white rounded-full shadow-md text-indigo-600 hover:bg-indigo-100 transition-colors">12</a>
+
+
+
+        <!-- Announcements Section -->
+        <div class="max-w-6xl mx-auto px-4 mt-12">
+            <h2 class="text-2xl font-bold text-indigo-900 mb-6 flex items-center">
+                <i class="fas fa-bullhorn mr-2"></i> Important Announcements
+            </h2>
+            <div
+                class="bg-white p-6 rounded-lg shadow-md mb-6 border-l-4 border-yellow-500 hover:shadow-xl transition-shadow">
+                <h3 class="text-xl font-bold mb-2 text-indigo-800">Admission Open for 2025-2026</h3>
+                <p class="text-gray-700 mb-2">Applications are now being accepted for the new academic year. Early
+                    applicants will receive priority consideration for scholarships and financial aid.</p>
+                <div class="flex justify-between items-center mt-4">
+                    <span class="text-sm text-gray-500"><i class="far fa-calendar-alt mr-1"></i> Posted: April 10,
+                        2025</span>
+                    <button
+                        class="bg-yellow-500 text-white py-2 px-4 rounded hover:bg-yellow-600 transition-colors inline-flex items-center">
+                        <i class="fas fa-arrow-right mr-2"></i> Apply Now
+                    </button>
+                </div>
+            </div>
+            <!-- 
+            <div class="flex justify-end gap-2 my-4">
+                <a href="#"
+                    class="w-10 h-10 flex items-center justify-center bg-white rounded-full shadow-md text-indigo-600 hover:bg-indigo-100 transition-colors">11</a>
+                <a href="#"
+                    class="w-10 h-10 flex items-center justify-center bg-white rounded-full shadow-md text-indigo-600 hover:bg-indigo-100 transition-colors">12</a>
+            </div> -->
         </div>
     </div>
 
@@ -236,7 +285,8 @@
                 <p class="text-lg">Take the first step towards your future today!</p>
             </div>
             <div>
-                <button class="bg-white text-indigo-800 font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-indigo-100 transition-colors pulse-effect">
+                <button
+                    class="bg-white text-indigo-800 font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-indigo-100 transition-colors pulse-effect">
                     <i class="fas fa-user-plus mr-2"></i> Apply Now
                 </button>
             </div>
@@ -249,21 +299,32 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <div>
                     <h3 class="text-xl font-bold mb-4">About Us</h3>
-                    <p class="text-indigo-200 mb-4">Our school was founded in 1993 by our emeinent sir.It took long steps to rich this peak.Its not as single man growth its a combined effort of our management,Teachers and Students.</p>
+                    <p class="text-indigo-200 mb-4">Our school was founded in 1993 by our emeinent sir.It took long
+                        steps to rich this peak.Its not as single man growth its a combined effort of our
+                        management,Teachers and Students.</p>
                     <div class="flex gap-4">
-                        <a href="#" class="text-white hover:text-indigo-200 transition-colors"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="text-white hover:text-indigo-200 transition-colors"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="text-white hover:text-indigo-200 transition-colors"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="text-white hover:text-indigo-200 transition-colors"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-white hover:text-indigo-200 transition-colors"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white hover:text-indigo-200 transition-colors"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white hover:text-indigo-200 transition-colors"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white hover:text-indigo-200 transition-colors"><i
+                                class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
                 <div>
                     <h3 class="text-xl font-bold mb-4">Quick Links</h3>
                     <ul>
-                        <li class="mb-2"><a href="#" class="text-indigo-200 hover:text-white transition-colors">Academic Calendar</a></li>
-                        <li class="mb-2"><a href="#" class="text-indigo-200 hover:text-white transition-colors">Events</a></li>
-                        <li class="mb-2"><a href="#" class="text-indigo-200 hover:text-white transition-colors">Student Portal</a></li>
-                        <li class="mb-2"><a href="#" class="text-indigo-200 hover:text-white transition-colors">Career</a></li>
+                        <li class="mb-2"><a href="#" class="text-indigo-200 hover:text-white transition-colors">Academic
+                                Calendar</a>
+                        </li>
+                        <li class="mb-2"><a href="#"
+                                class="text-indigo-200 hover:text-white transition-colors">Events</a></li>
+                        <li class="mb-2"><a href="#" class="text-indigo-200 hover:text-white transition-colors">Student
+                                Portal</a></li>
+                        <li class="mb-2"><a href="#"
+                                class="text-indigo-200 hover:text-white transition-colors">Career</a></li>
                     </ul>
                 </div>
                 <div>
@@ -278,8 +339,10 @@
                     <h3 class="text-xl font-bold mb-4">Newsletter</h3>
                     <p class="text-indigo-200 mb-4">Subscribe to our newsletter to get updates.</p>
                     <form class="flex">
-                        <input type="email" placeholder="Your Email" class="px-4 py-2 rounded-l-lg w-full focus:outline-none text-gray-800">
-                        <button type="submit" class="bg-indigo-600 hover:bg-indigo-700 px-4 py-2 rounded-r-lg transition-colors">
+                        <input type="email" placeholder="Your Email"
+                            class="px-4 py-2 rounded-l-lg w-full focus:outline-none text-gray-800">
+                        <button type="submit"
+                            class="bg-indigo-600 hover:bg-indigo-700 px-4 py-2 rounded-r-lg transition-colors">
                             <i class="fas fa-paper-plane"></i>
                         </button>
                     </form>
@@ -293,9 +356,9 @@
 
     <script>
         // Ticker animation is handled by CSS now
-        
+
         // Slider functionality
-        (function() {
+        (function () {
             const slider = document.querySelector('.slider');
             const slides = document.querySelectorAll('.slide');
             const prevBtn = document.querySelector('.slider-btn.prev');
@@ -303,16 +366,16 @@
             const indicators = document.querySelectorAll('.slide-indicator');
             let currentSlide = 0;
             const slideCount = slides.length;
-            
+
             // Set initial position and active indicator
             updateSlider();
-            
+
             // Auto slide functionality
             let slideInterval = setInterval(nextSlide, 5000);
-            
+
             function updateSlider() {
                 slider.style.transform = `translateX(-${currentSlide * 100}%)`;
-                
+
                 // Update indicators
                 indicators.forEach((indicator, index) => {
                     if (index === currentSlide) {
@@ -324,60 +387,61 @@
                     }
                 });
             }
-            
+
             function nextSlide() {
                 currentSlide = (currentSlide + 1) % slideCount;
                 updateSlider();
             }
-            
+
             function prevSlide() {
                 currentSlide = (currentSlide - 1 + slideCount) % slideCount;
                 updateSlider();
             }
-            
+
             // Add event listeners for buttons
-            nextBtn.addEventListener('click', function() {
+            nextBtn.addEventListener('click', function () {
                 clearInterval(slideInterval);
                 nextSlide();
                 slideInterval = setInterval(nextSlide, 5000);
             });
-            
-            prevBtn.addEventListener('click', function() {
+
+            prevBtn.addEventListener('click', function () {
                 clearInterval(slideInterval);
                 prevSlide();
                 slideInterval = setInterval(nextSlide, 5000);
             });
-            
+
             // Add event listeners for indicators
             indicators.forEach((indicator, index) => {
-                indicator.addEventListener('click', function() {
+                indicator.addEventListener('click', function () {
                     clearInterval(slideInterval);
                     currentSlide = index;
                     updateSlider();
                     slideInterval = setInterval(nextSlide, 5000);
                 });
             });
-            
+
             // Animation on scroll
             const animateElements = document.querySelectorAll('.animate-on-scroll');
-            
+
             function checkScroll() {
                 animateElements.forEach(element => {
                     const elementTop = element.getBoundingClientRect().top;
                     const windowHeight = window.innerHeight;
-                    
+
                     if (elementTop < windowHeight - 100) {
                         element.classList.add('slide-in');
                     }
                 });
             }
-            
+
             // Initial check
             checkScroll();
-            
+
             // Listen for scroll
             window.addEventListener('scroll', checkScroll);
         })();
     </script>
 </body>
+
 </html>
